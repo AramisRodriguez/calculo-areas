@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Test</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Calculo de áreas</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calcula el área de...</h1>
+        </header><br><br><br>
+        <main>
+            <form>
+                <h2> <span class="cuadradoIcon" ></span> Cuadrado</h2>
+                <label for="cuadrado">Ingresa valor de un lado del cuadrado.</label>
+                <input id="cuadrado" type="number" placeholder="Lado">
+                <button type="button" onclick="areaCuadrado()" >Click Resultado</button>
+                <p id="resultCuadrado" class="result" ></p>
+            </form><br><br>
+            <form>
+                <h2> <span class="rectanguloIcon" ></span> Rectángulo</h2>
+                <label for="rectanguloAncho">Ingresa valor del lado ancho del rectangulo.</label>
+                <input id="rectanguloAncho" type="number" placeholder="Ancho"><br>
+                <label for="rectanguloLargo">Ingresa valor del lado largo del rectangulo.</label>
+                <input id="rectanguloLargo" type="number" placeholder="Largo">
+                <button type="button" onclick="areaRectangulo()" >Click Resultado</button>
+                <p id="resultRectangulo" class="result" ></p>
+            </form><br><br>
+            <form>
+                <h2> <span class="circuloIcon" ></span> Circulo</h2>
+                <label for="circulo">Ingresa valor del radio del circulo.</label>
+                <input id="circulo" type="number" placeholder="Radio">
+                <button type="button" onclick="areaCirculo()" >Click Resultado</button>
+                <p id="resultCirculo" class="result" ></p>
+            </form><br><br>
+        </main>
 
-    <script src="./scripts/index.js"></script>
-</body>
+        <footer></footer>
+
+        <script src="./scripts/index.js"></script>
+    </body>
 </html>
